@@ -38,7 +38,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {font-family: 'vazirmatn';}
+time, mark, audio, video {font-family: 'vazirmatn';word-wrap: break-word;}
 .stars {
     position: absolute;
     inset: 0;
@@ -83,6 +83,15 @@ button{
     width: 90%;
     height: 330px;
     padding: 10px;
+}
+#aboutme{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:end ;
+    width: 90%;
+    height: 150px;
+    padding: 30px;
 }
 .logo{
     display: flex;
