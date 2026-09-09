@@ -12,6 +12,7 @@
 }
 
 body {
+    margin-bottom: 15px;
     position: relative;
     inset: 0;
     /* height: 100vh; */
@@ -246,7 +247,7 @@ h1 {
     background: rgba(83, 124, 67, 0.1) !important;
 }
 
-#projects {
+#projects ,#licences{
     gap: 6px;
 
     width: 90%;
@@ -259,37 +260,67 @@ h1 {
     overflow-wrap: anywhere;
 }
 
+#whatmenow {
+    width: 90%;
+    min-height: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: end;
+}
+
+.skill {
+    width: 50px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.skill .icon {
+    width: 40px;
+    height: 40px;
+}
+
 .shadow {
     z-index: 1;
     background: #172657;
     position: relative;
 
 }
-.row{
+
+.row {
     width: 100%;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     align-items: end;
 }
-.icon{
-    width:30px;
+
+.icon {
+    width: 30px;
     height: 30px;
     border-radius: 50%;
     background-color: #364e9c;
 }
-.badgeprojects{
+
+.badgeprojects {
     padding: 4px;
-    border:#1a2449 1px solid;
+    border: #1a2449 1px solid;
     width: fit-content;
     height: fit-content;
     border-radius: 20px;
     background-color: #465cac96;
 }
-.badgeprojects p{
+
+.badgeprojects p {
     font-size: x-small;
     color: #ffffff9c;
 }
+
 .project {
     width: 200px;
     padding: 10px;
@@ -301,17 +332,21 @@ h1 {
     align-items: baseline;
     border-radius: 20px;
     border: #481757 2px solid;
-    height: 120px;
+    height: 160px;
 }
-.project h3{
+
+.project h3 {
     /* width: 100%; */
     text-align: start;
 
+
 }
-.project p{
+
+.project p {
     font-size: x-small;
     line-height: 14px;
 }
+
 .shadow::before {
     content: "";
     position: absolute;
@@ -319,7 +354,7 @@ h1 {
     padding: 30px;
     border-radius: 20px;
 
-    background: url("/assest/pictures/picture.jpg") center 55% / cover no-repeat;
+    background: var(--image) center 55% / cover no-repeat;
 
     -webkit-mask-image: linear-gradient(to bottom,
             rgba(36, 34, 34, 0.37) 10%,
@@ -332,6 +367,66 @@ h1 {
     z-index: -1;
 }
 
+#thetimeline {
+    overflow-y: scroll;
+    width: 90%;
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    flex-direction: row;
+    padding: 50px;
+}
+
+.line {
+    position: relative;
+    border-radius: 3px;
+    width: 3px;
+    height: 300px;
+    background-color: #0095ec;
+}
+.information{
+    padding: 7px;
+    position: absolute;
+    width: 100%;
+    transform:translateY(-40%);
+}
+.line span {
+    position: absolute;
+    left: -4px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #0095ec;
+    /* box-shadow: -1px -1px 4px 4px #c74be025; */
+}
+.informations{
+    position: relative;
+    width: calc(100% - 10px);
+    height: 300px;
+    box-shadow: none;
+    /* background-color: #351757; */
+}
+
+.socialmedia{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#callme{
+    width: 90%;
+    min-height: 150px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    flex-direction: column;
+}
+
+#callme h1{
+    font-size: xx-large;
+}
 /* Liquid Glass Card */
 .liquid-glass-card {
     /* position: relative; */
