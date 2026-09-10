@@ -55,6 +55,11 @@ body {
     padding: 0 10px 0 10px;
 }
 
+.About-me-badge{
+    display: flex;
+    gap: 8px;
+}
+
 button {
     all: unset;
     cursor: pointer;
@@ -66,10 +71,44 @@ button {
     justify-content: space-around;
     flex-direction: row;
 }
-
+#summeryofme .icon{
+    width:50px;height:50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#summeryofme .icon i{
+    font-size: x-large;
+}
 .item {
     text-align: end;
     width: 100%;
+}
+
+#licences .About-me-badge{
+    height: 40px;
+    color: #728dec;
+    width: 250px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 10px;
+}
+#licences .About-me-badge i,#licences .About-me-badge h3 {
+    color: #728dec;
+
+}
+#projects .About-me-badge{
+    height: 40px;
+    color: #728dec;
+    width: 180px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 10px;
+}
+#projects .About-me-badge i,#projects .About-me-badge h3 {
+    color: #728dec;
+
 }
 
 #hero {
@@ -85,8 +124,10 @@ button {
 
 .badges {
     display: flex;
-    justify-content: space-between;
+    gap: 5px;
+    /* justify-content: space-between; */
     flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
 }
 
@@ -134,7 +175,6 @@ button {
     padding: 16px;
     display: flex;
     flex-direction: column;
-    align-items: end;
     gap: 7px;
 }
 
@@ -263,16 +303,13 @@ h1 {
 #whatmenow {
     width: 90%;
     min-height: 60px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
     padding: 10px;
-    justify-content: space-around;
-    align-items: end;
+    grid-template-columns: repeat(7,1fr);
 }
 
 .skill {
-    width: 50px;
+    width: 66px;
     height: 70px;
     display: flex;
     flex-direction: column;
@@ -303,6 +340,9 @@ h1 {
 .icon {
     width: 30px;
     height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
     background-color: #364e9c;
 }
@@ -427,6 +467,300 @@ h1 {
 #callme h1{
     font-size: xx-large;
 }
+
+
+.bi-fastapi {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: -0.125em;
+  background-color: currentColor;
+  mask-image: url('assest/skilslogos/fastapi-svgrepo-com.svg');
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  -webkit-mask-image: url('assest/skilslogos/fastapi-svgrepo-com.svg');
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+}
+
+.bi-vscode {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: -0.125em;
+  background-color: currentColor;
+  mask-image: url('assest/skilslogos/vscode-svgrepo-com.svg');
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  -webkit-mask-image: url('assest/skilslogos/vscode-svgrepo-com.svg');
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+}
+
+.bi-sql {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: -0.125em;
+  background-color: currentColor;
+  mask-image: url('assest/skilslogos/sql-database-generic-svgrepo-com.svg');
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  -webkit-mask-image: url('assest/skilslogos/sql-database-generic-svgrepo-com.svg');
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+}
+.bi-python {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: -0.125em;
+  background-color: currentColor;
+  mask-image: url('assest/skilslogos/python-logo-only.svg');
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  -webkit-mask-image: url('assest/skilslogos/python-logo-only.svg');
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+}
+.bi-nodejs {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: -0.125em;
+  background-color: currentColor;
+  mask-image: url('assest/skilslogos/nodejs-svgrepo-com.svg');
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  -webkit-mask-image: url('assest/skilslogos/nodejs-svgrepo-com.svg');
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+}
+.bi-micropython {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: -0.125em;
+  background-color: currentColor;
+  mask-image: url('assest/skilslogos/MicroPython_new_logo.svg');
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  -webkit-mask-image: url('assest/skilslogos/MicroPython_new_logo.svg');
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+}
+
+.bi-jinja {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: -0.125em;
+  background-color: currentColor;
+  mask-image: url('assest/skilslogos/jinja-svgrepo-com.svg');
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  -webkit-mask-image: url('assest/skilslogos/jinja-svgrepo-com.svg');
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+}
+.bi-javascript-my {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: -0.125em;
+  background-color: currentColor;
+  mask-image: url('assest/skilslogos/javascript-logo-svgrepo-com.svg');
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  -webkit-mask-image: url('assest/skilslogos/javascript-logo-svgrepo-com.svg');
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+}
+.bi-html {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: -0.125em;
+  background-color: currentColor;
+  mask-image: url('assest/skilslogos/html5-svgrepo-com.svg');
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  -webkit-mask-image: url('assest/skilslogos/html5-svgrepo-com.svg');
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+}
+.bi-go {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: -0.125em;
+  background-color: currentColor;
+  mask-image: url('assest/skilslogos/go-svgrepo-com.svg');
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  -webkit-mask-image: url('assest/skilslogos/go-svgrepo-com.svg');
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+}
+
+.bi-git-my {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: -0.125em;
+  background-color: currentColor;
+  mask-image: url('assest/skilslogos/git-svgrepo-com.svg');
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  -webkit-mask-image: url('assest/skilslogos/git-svgrepo-com.svg');
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+}
+.bi-flutter {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: -0.125em;
+  background-color: currentColor;
+  mask-image: url('assest/skilslogos/flutter-svgrepo-com.svg');
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  -webkit-mask-image: url('assest/skilslogos/flutter-svgrepo-com.svg');
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+}
+.bi-django {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: -0.125em;
+  background-color: currentColor;
+  mask-image: url('assest/skilslogos/django-svgrepo-com.svg');
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  -webkit-mask-image: url('assest/skilslogos/django-svgrepo-com.svg');
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+}
+.bi-dart {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: -0.125em;
+  background-color: currentColor;
+  mask-image: url('assest/skilslogos/dart-svgrepo-com.svg');
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  -webkit-mask-image: url('assest/skilslogos/dart-svgrepo-com.svg');
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+}
+
+.bi-css-my {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: -0.125em;
+  background-color: currentColor;
+  mask-image: url('assest/skilslogos/css-svgrepo-com.svg');
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  -webkit-mask-image: url('assest/skilslogos/css-svgrepo-com.svg');
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+}
+.bi-bootstrap-my {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: -0.125em;
+  background-color: currentColor;
+  mask-image: url('assest/skilslogos/bootstrap-svgrepo-com.svg');
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  -webkit-mask-image: url('assest/skilslogos/bootstrap-svgrepo-com.svg');
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+}
+.bi-bale {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: -0.125em;
+  background-color: currentColor;
+  mask-image: url('assest/skilslogos/bale-svgrepo-com.svg');
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  -webkit-mask-image: url('assest/skilslogos/bale-svgrepo-com.svg');
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+}
+.bi-python {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: -0.125em;
+  background-color: currentColor;
+  mask-image: url('assest/skilslogos/python-logo-only.svg');
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  -webkit-mask-image: url('assest/skilslogos/python-logo-only.svg');
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Liquid Glass Card */
 .liquid-glass-card {
     /* position: relative; */

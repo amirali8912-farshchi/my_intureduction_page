@@ -4,300 +4,364 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>امیرعلی فرشچی برنامه نویس</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="stars"></div>
-    <div class="liquid-glass-card now-bar">
+    <nav class="liquid-glass-card now-bar">
         <button class="liquid-glass-card now-buttons" onclick=" nowbottons('hero',this)">خانه</button>
-        <button class="now-buttons" onclick=" nowbottons('summeryofme',this)">خلاصه من</button>
         <button class="now-buttons" onclick=" nowbottons('aboutme',this)">درباره ی من</button>
+        <button class="now-buttons" onclick=" nowbottons('summeryofme',this)">خلاصه من</button>
         <button class="now-buttons" onclick=" nowbottons('projects',this)">پروژه های من</button>
         <button class="now-buttons" onclick=" nowbottons('licences',this)">گواهینامه و مدرک هایم</button>
         <button class="now-buttons" onclick=" nowbottons('whatmenow',this)">آموخته های من</button>
         <button class="now-buttons" onclick=" nowbottons('thetimeline',this)">خط زمانی</button>
-    </div>
-    <div id="hero" class="liquid-glass-card shadow" style="--image: url('assest/pictures/picture.jpg')">
+        <button class="now-buttons" onclick=" nowbottons('callme',this)">تماس با من</button>
+    </nav>
+    <section id="hero" class="liquid-glass-card shadow" style="--image: url('assest/pictures/picture.jpg')">
         <div class="description">
             <p class="liquid-glass-card badge">devoloper & builder</p>
             <h1>امیرعلی</h1>
             <h1 class="colral">فرشچی</h1>
-            <h2>من سازنده نرم افزار های با جلوه ای زیبا و عالی هستم</h2>
+            <h2>یه برنامه نویس جوان که با کد ایدهاش رو به واقعیت تبدیل میکنه</h2>
             <div class="buttons">
-                <button type="button" class=" liquid-glass-card color" style="height: 30px;">حرفه های من</button>
-                <button type="button" class=" liquid-glass-card " style="height: 30px;padding: 8px;">مشاهده گیت
-                    هاب</button>
+                <a href="#whatmenow" class=" liquid-glass-card color" style="height: 30px;text-decoration: none;">حرفه
+                    های من</a>
+                <a href="https://github.com/amirali8912-farshchi" class=" liquid-glass-card "
+                    style="height: 30px;padding: 8px;text-decoration: none;">
+                    <i class="bi bi-github"></i>
+                    مشاهده گیت هاب</a>
             </div>
         </div>
 
-    </div>
-    <div class="liquid-glass-card" id="aboutme">
+    </section>
+    <section class="liquid-glass-card" id="aboutme">
         <h3>درباره ی من</h3>
         <p>فیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
             نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و
             آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی
             الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت .</p>
         <div class="badges">
-            <div class="About-me-badge"><i></i>
-                <p>89\10\20</p>
+            <div class="About-me-badge">
+                <i class="bi bi-geo-alt"></i>
+                <p>ایران (تبریز)</p>
             </div>
             <div class="About-me-badge"><i></i>
-                <p>89\10\20</p>
+                <i class="bi bi-mortarboard"></i>
+                <p>دانش آموز</p>
             </div>
             <div class="About-me-badge"><i></i>
-                <p>89\10\20</p>
+                <i class="bi bi-code-slash"></i>
+                <p>برنامه نویس</p>
             </div>
             <div class="About-me-badge"><i></i>
-                <p>89\10\20</p>
+                <i class="bi bi-calendar-event"></i>
+                <p>۱۳۸۹/۱۰/۲۰</p>
             </div>
         </div>
-    </div>
-    <div id="summeryofme">
+    </section>
+    <section id="summeryofme">
         <div class="liquid-glass-card summerybox">
-            <div class="" style="width:40px;height: 40px; border-radius: 50%;background-color: brown;"></div>
-            <h3>10+</h3>
-            <p>projects</p>
+            <div class="icon"><i class="bi bi-folder"></i></div>
+            <h3>5+</h3>
+            <p>پروژه</p>
         </div>
         <div class="liquid-glass-card summerybox">
-            <div class="" style="width:40px;height: 40px; border-radius: 50%;background-color: brown;"></div>
-            <h3>10+</h3>
-            <p>projects</p>
+            <div class="icon"><i class="bi bi-code-slash"></i></div>
+            <h3>12+</h3>
+            <p>تکنولوژی</p>
         </div>
         <div class="liquid-glass-card summerybox">
-            <div class="" style="width:40px;height: 40px; border-radius: 50%;background-color: brown;"></div>
-            <h3>10+</h3>
-            <p>projects</p>
+            <div class="icon"><i class="bi bi-lightning"></i></div>
+            <h3>4+</h3>
+            <p>سال</p>
         </div>
-    </div>
-    <div id="licences" class="projects liquid-glass-card">
-        <div class="shadow project" style="--image: url('assest/pictures/goldoonban.png')">
-            <div class="row">
-                <h3>گلدون بان</h3>
-                <div class="icon"></div>
-            </div>
+    </section>
+    <section id="projects" class="projects liquid-glass-card">
+        <div class="About-me-badge liquid-glass-card"><i></i>
+            <i class="bi bi-folder"></i>
+            <h3>پروژه های من</h3>
+        </div>
+        <div class="row">
+            <div class="shadow project" style="--image: url('assest/pictures/goldoonban.png')">
+                <div class="row">
+                    <h3>گلدون بان</h3>
+                    <a href="https://github.com/amirali8912-farshchi/goldoonban" class="icon">
+                        <i class="bi bi-arrow-left"></i>
+                    </a>
+                </div>
 
-            <p>یه پروژه جالب برای اندازه گیری رطوبت گیاهان و آبیاری آنها</p>
-            <div class="badges">
-                <div class="badgeprojects">
-                    <p>flutter</p>
-                </div>
-                <div class="badgeprojects">
-                    <p>Dart</p>
-                </div>
-                <div class="badgeprojects">
-                    <p>Python</p>
-                </div>
-                <div class="badgeprojects">
-                    <p>Supabase</p>
+                <p>یه پروژه جالب برای اندازه گیری رطوبت گیاهان و آبیاری آنها</p>
+                <div class="badges">
+                    <div class="badgeprojects">
+                        <p>flutter</p>
+                    </div>
+                    <div class="badgeprojects">
+                        <p>Dart</p>
+                    </div>
+                    <div class="badgeprojects">
+                        <p>Python</p>
+                    </div>
+                    <div class="badgeprojects">
+                        <p>Supabase</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="shadow project" style="--image: url('assest/pictures/goldoonban.png')">
-            <div class="row">
-                <h3>گلدون بان</h3>
-                <div class="icon"></div>
-            </div>
+            <div class="shadow project" style="--image: url('assest/pictures/answersheet.ico')">
+                <div class="row">
+                    <h3>پاسخبرگ ساز</h3>
+                    <a href="https://github.com/amirali8912-farshchi/answer-sheet" class="icon">
+                        <i class="bi bi-arrow-left"></i>
+                    </a>
+                </div>
 
-            <p>یه پروژه جالب برای اندازه گیری رطوبت گیاهان و آبیاری آنها</p>
-            <div class="badges">
-                <div class="badgeprojects">
-                    <p>flutter</p>
-                </div>
-                <div class="badgeprojects">
-                    <p>Dart</p>
-                </div>
-                <div class="badgeprojects">
-                    <p>Python</p>
-                </div>
-                <div class="badgeprojects">
-                    <p>Supabase</p>
+                <p>یه پروژه جالب برای چند نوع پاسخبرگ</p>
+                <div class="badges">
+                    <div class="badgeprojects">
+                        <p>html</p>
+                    </div>
+                    <div class="badgeprojects">
+                        <p>css</p>
+                    </div>
+                    <div class="badgeprojects">
+                        <p>javascript</p>
+                    </div>
+                    <div class="badgeprojects">
+                        <p>Bootstrap</p>
+                    </div>
+                    <div class="badgeprojects">
+                        <p>Django</p>
+                    </div>
+                    <div class="badgeprojects">
+                        <p>Python</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="shadow project" style="--image: url('assest/pictures/goldoonban.png')">
-            <div class="row">
-                <h3>گلدون بان</h3>
-                <div class="icon"></div>
-            </div>
+            <div class="shadow project" style="--image: url('assest/pictures/mendeleev.png')">
+                <div class="row">
+                    <h3>جدول مندلیف</h3>
+                    <a href="https://github.com/amirali8912-farshchi/mendeleev" class="icon">
+                        <i class="bi bi-arrow-left"></i>
+                    </a>
+                </div>
 
-            <p>یه پروژه جالب برای اندازه گیری رطوبت گیاهان و آبیاری آنها</p>
-            <div class="badges">
-                <div class="badgeprojects">
-                    <p>flutter</p>
-                </div>
-                <div class="badgeprojects">
-                    <p>Dart</p>
-                </div>
-                <div class="badgeprojects">
-                    <p>Python</p>
-                </div>
-                <div class="badgeprojects">
-                    <p>Supabase</p>
+                <p>یه پروژه جالب که باهاش میتونی به راحتی جدول مندلیف رو یاد بگیری و جزئیات هر عنصر رو یاد بگیری</p>
+                <div class="badges">
+                    <div class="badgeprojects">
+                        <p>html</p>
+                    </div>
+                    <div class="badgeprojects">
+                        <p>css</p>
+                    </div>
+                    <div class="badgeprojects">
+                        <p>javascript</p>
+                    </div>
+                    <div class="badgeprojects">
+                        <p>Python</p>
+                    </div>
+                    <div class="badgeprojects">
+                        <p>Django</p>
+                    </div>
+                    <div class="badgeprojects">
+                        <p>SQL</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="shadow project" style="--image: url('assest/pictures/goldoonban.png')">
-            <div class="row">
-                <h3>لیست قیمت</h3>
-                <div class="icon"></div>
-            </div>
+            <div class="shadow project" style="--image: url('assest/pictures/goldoonban.png')">
+                <div class="row">
+                    <h3>لیست قیمت</h3>
+                    <a href="https://github.com/amirali8912-farshchi/price" class="icon" github.com/amir>
+                        <i class="bi bi-arrow-left"></i>
+                    </a>
+                </div>
 
-            <p>یه پروژه که باهاش میتونی لیست قیمت فروشگاهتو بسازی</p>
-            <div class="badges">
-                <div class="badgeprojects">
-                    <p>html</p>
-                </div>
-                <div class="badgeprojects">
-                    <p>css</p>
-                </div>
-                <div class="badgeprojects">
-                    <p>javascript</p>
-                </div>
-                <div class="badgeprojects">
-                    <p>Supabase</p>
+                <p>یه پروژه که باهاش میتونی لیست قیمت فروشگاهتو بسازی</p>
+                <div class="badges">
+                    <div class="badgeprojects">
+                        <p>html</p>
+                    </div>
+                    <div class="badgeprojects">
+                        <p>css</p>
+                    </div>
+                    <div class="badgeprojects">
+                        <p>javascript</p>
+                    </div>
+                    <div class="badgeprojects">
+                        <p>Supabase</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div id="projects" class="projects liquid-glass-card">
-        <div class="shadow project" style="--image: url('assest/pictures/goldoonban.png')">
-            <div class="row">
-                <h3>گلدون بان</h3>
-                <div class="icon"></div>
-            </div>
+    </section>
+    <section id="licences" class="projects liquid-glass-card">
+        <div class="About-me-badge liquid-glass-card"><i></i>
+            <i class="bi bi-mortarboard"></i>
+            <h3>گواهینامه و مدرک های من</h3>
+        </div>
+        <div class="row">
+            <div class="shadow project" style="--image: url('assest/pictures/license-1.jpg')">
+                <div class="row">
+                    <h3>پایتون (فنی حرفه ای )</h3>
+                    <a href="assest/pictures/license-1.jpg" class="icon">
+                        <i class="bi bi-arrow-left"></i>
+                    </a>
+                </div>
 
-            <p>یه پروژه جالب برای اندازه گیری رطوبت گیاهان و آبیاری آنها</p>
-            <div class="badges">
-                <div class="badgeprojects">
-                    <p>flutter</p>
-                </div>
-                <div class="badgeprojects">
-                    <p>Dart</p>
-                </div>
-                <div class="badgeprojects">
-                    <p>Python</p>
-                </div>
-                <div class="badgeprojects">
-                    <p>Supabase</p>
-                </div>
+                <p>من توی این دوره یاد گرفتم که چطور از شی گرایی پایتون و پایگاه داده و همچنین برنامه های گرافیکی
+                    (tkinter) استفاده نمایم</p>
             </div>
-        </div>
-        <div class="shadow project" style="--image: url('assest/pictures/goldoonban.png')">
-            <div class="row">
-                <h3>گلدون بان</h3>
-                <div class="icon"></div>
-            </div>
+            <div class="shadow project" style="--image: url('assest/pictures/license-2.jpg')">
+                <div class="row">
+                    <h3>پایتون (جهاد دانشگاهی )</h3>
+                    <a href="assest/pictures/license-3.jpg" class="icon">
+                        <i class="bi bi-arrow-left"></i>
+                    </a>
+                </div>
 
-            <p>یه پروژه جالب برای اندازه گیری رطوبت گیاهان و آبیاری آنها</p>
-            <div class="badges">
-                <div class="badgeprojects">
-                    <p>flutter</p>
-                </div>
-                <div class="badgeprojects">
-                    <p>Dart</p>
-                </div>
-                <div class="badgeprojects">
-                    <p>Python</p>
-                </div>
-                <div class="badgeprojects">
-                    <p>Supabase</p>
-                </div>
+                <p>من توی این دوره یاد گرفتم که چطور با پایتون برنامه نویسی کنم و ایده هایم را به واقعیت تبدیل کنم</p>
             </div>
-        </div>
-        <div class="shadow project" style="--image: url('assest/pictures/goldoonban.png')">
-            <div class="row">
-                <h3>گلدون بان</h3>
-                <div class="icon"></div>
-            </div>
+            <div class="shadow project" style="--image: url('assest/pictures/license-3.png')">
+                <div class="row">
+                    <h3>طراحی فرانت (فنی حرفه ای )</h3>
+                    <a href="assest/pictures/license-3.png" class="icon">
+                        <i class="bi bi-arrow-left"></i>
+                    </a>
+                </div>
 
-            <p>یه پروژه جالب برای اندازه گیری رطوبت گیاهان و آبیاری آنها</p>
-            <div class="badges">
-                <div class="badgeprojects">
-                    <p>flutter</p>
-                </div>
-                <div class="badgeprojects">
-                    <p>Dart</p>
-                </div>
-                <div class="badgeprojects">
-                    <p>Python</p>
-                </div>
-                <div class="badgeprojects">
-                    <p>Supabase</p>
-                </div>
+                <p>من توی این دوره یاد گرفتم که چطوری از html, css , javascript استفاده کنم که تجربه های جالبی برایم
+                    داشته است</p>
             </div>
         </div>
-        <div class="shadow project" style="--image: url('assest/pictures/goldoonban.png')">
-            <div class="row">
-                <h3>لیست قیمت</h3>
-                <div class="icon"></div>
-            </div>
-
-            <p>یه پروژه که باهاش میتونی لیست قیمت فروشگاهتو بسازی</p>
-            <div class="badges">
-                <div class="badgeprojects">
-                    <p>html</p>
-                </div>
-                <div class="badgeprojects">
-                    <p>css</p>
-                </div>
-                <div class="badgeprojects">
-                    <p>javascript</p>
-                </div>
-                <div class="badgeprojects">
-                    <p>Supabase</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="liquid-glass-card" id="whatmenow">
+    </section>
+    <section class="liquid-glass-card" id="whatmenow">
         <div class="skill">
-            <div class="icon"></div>
+            <div class="icon">
+                <i class="bi bi-python"></i>
+            </div>
             <p>python</p>
         </div>
         <div class="skill">
-            <div class="icon"></div>
-            <p>python</p>
+            <div class="icon">
+                <i class="bi bi-django"></i>
+            </div>
+            <p>django</p>
         </div>
         <div class="skill">
-            <div class="icon"></div>
-            <p>python</p>
+            <div class="icon">
+                <i class="bi bi-fastapi"></i>
+            </div>
+            <p>Fast Api</p>
         </div>
         <div class="skill">
-            <div class="icon"></div>
-            <p>python</p>
+            <div class="icon">
+                <i class="bi bi-micropython"></i>
+            </div>
+            <p>micropython</p>
         </div>
         <div class="skill">
-            <div class="icon"></div>
-            <p>python</p>
+            <div class="icon">
+                <i class="bi bi-html"></i>
+            </div>
+            <p>HTML</p>
         </div>
         <div class="skill">
-            <div class="icon"></div>
-            <p>python</p>
+            <div class="icon">
+                <i class="bi bi-css"></i>
+            </div>
+            <p>CSS</p>
         </div>
-    </div>
-    <div class="liquid-glass-card" id="thetimeline">
+        <div class="skill">
+            <div class="icon">
+                <i class="bi bi-javascript"></i>
+            </div>
+            <p>JavaScript</p>
+        </div>
+        <div class="skill">
+            <div class="icon">
+                <i class="bi bi-nodejs"></i>
+            </div>
+            <p>Node JS</p>
+        </div>
+        <div class="skill">
+            <div class="icon">
+                <i class="bi bi-git"></i>
+            </div>
+            <p>git</p>
+        </div>
+        <div class="skill">
+            <div class="icon">
+                <i class="bi bi-dart"></i>
+            </div>
+            <p>Dart</p>
+        </div>
+        <div class="skill">
+            <div class="icon">
+                <i class="bi bi-flutter"></i>
+            </div>
+            <p>Flutter</p>
+        </div>
+        <div class="skill">
+            <div class="icon">
+                <i class="bi bi-sql"></i>
+            </div>
+            <p>Sql</p>
+        </div>
+        <div class="skill">
+            <div class="icon">
+                <i class="bi bi-go"></i>
+            </div>
+            <p>Go</p>
+        </div>
+        <div class="skill">
+            <div class="icon">
+                <i class="bi bi-vscode"></i>
+            </div>
+            <p>VScode</p>
+        </div>
+        <div class="skill">
+            <div class="icon">
+                <i class="bi bi-bootstrap-my"></i>
+            </div>
+            <p>Bootstrap</p>
+        </div>
+        <div class="skill">
+            <div class="icon">
+                <i class="bi bi-jinja"></i>
+            </div>
+            <p>jinja</p>
+        </div>
+    </section>
+    <section class="liquid-glass-card" id="thetimeline">
         <div class="informations">
             <div class=" liquid-glass-card information" style="top: 0px;">
                 <p>لورم ایپسوم متن ساختگی</p>
-                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز</p>
-                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز</p>
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و
+                    متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز</p>
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و
+                    متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز</p>
             </div>
             <div class=" liquid-glass-card information" style="top: 100px;">
                 <p>لورم ایپسوم متن ساختگی</p>
-                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز</p>
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و
+                    متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز</p>
             </div>
             <div class=" liquid-glass-card information" style="top: 200px;">
                 <p>لورم ایپسوم متن ساختگی</p>
-                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز</p>
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و
+                    متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز</p>
             </div>
             <div class=" liquid-glass-card information" style="top: 300px;">
                 <p>لورم ایپسوم متن ساختگی</p>
-                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز</p>
-                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز</p>
-                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز</p>
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و
+                    متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز</p>
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و
+                    متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز</p>
+                <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و
+                    متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز</p>
             </div>
         </div>
         <div class="line">
@@ -306,8 +370,8 @@
             <span style="top: 200px;"></span>
             <span style="top: 300px;"></span>
         </div>
-    </div>
-    <div class="liquid-glass-card" id="callme">
+    </section>
+    <section class="liquid-glass-card" id="callme">
         <h1>تماس با من</h1>
         <p>اگر ایده ای دارید و میخواهید با من مشورت نمایید میتوانید با من تماس بگیرید</p>
         <h2>راه های ارتباطی:</h2>
@@ -317,7 +381,7 @@
             <div class="icon"></div>
             <div class="icon"></div>
         </div>
-    </div>
+    </section>
     <script src="script.js"></script>
 </body>
 
