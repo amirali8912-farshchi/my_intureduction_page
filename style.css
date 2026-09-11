@@ -55,7 +55,7 @@ body {
     padding: 0 10px 0 10px;
 }
 
-.About-me-badge{
+.About-me-badge {
     display: flex;
     gap: 8px;
 }
@@ -71,22 +71,26 @@ button {
     justify-content: space-around;
     flex-direction: row;
 }
-#summeryofme .icon{
-    width:50px;height:50px;
+
+#summeryofme .icon {
+    width: 50px;
+    height: 50px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
-#summeryofme .icon i{
+
+#summeryofme .icon i {
     font-size: x-large;
 }
+
 .item {
     text-align: end;
     width: 100%;
 }
 
-#licences .About-me-badge{
+#licences .About-me-badge {
     height: 40px;
     color: #728dec;
     width: 250px;
@@ -94,11 +98,14 @@ button {
     margin-right: 10px;
     padding: 10px;
 }
-#licences .About-me-badge i,#licences .About-me-badge h3 {
+
+#licences .About-me-badge i,
+#licences .About-me-badge h3 {
     color: #728dec;
 
 }
-#projects .About-me-badge{
+
+#projects .About-me-badge {
     height: 40px;
     color: #728dec;
     width: 180px;
@@ -106,8 +113,52 @@ button {
     margin-right: 10px;
     padding: 10px;
 }
-#projects .About-me-badge i,#projects .About-me-badge h3 {
+
+#projects .About-me-badge i,
+#projects .About-me-badge h3 {
     color: #728dec;
+
+}
+
+#whatmenow .About-me-badge {
+    height: 40px;
+    color: #728dec;
+    width: 260px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+#whatmenow .About-me-badge i,
+#whatmenow .About-me-badge h3 {
+    color: #728dec;
+
+}
+
+#thetimeline .About-me-badge {
+    height: 40px;
+    color: #728dec;
+    width: 120px;
+    margin-bottom: 90px;
+    /* margin-right: 10px; */
+    margin-left: calc(100% - 110px);
+    padding: 10px;
+}
+
+#thetimeline .About-me-badge i,
+#thetimeline .About-me-badge h3 {
+    color: #728dec;
+
+}
+
+pre,
+.information p {
+    line-height: 20px;
+}
+
+pre {
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
 
 }
 
@@ -287,7 +338,8 @@ h1 {
     background: rgba(83, 124, 67, 0.1) !important;
 }
 
-#projects ,#licences{
+#projects,
+#licences {
     gap: 6px;
 
     width: 90%;
@@ -303,9 +355,16 @@ h1 {
 #whatmenow {
     width: 90%;
     min-height: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.grid {
+    width: 100%;
+    min-height: 60px;
     display: grid;
     padding: 10px;
-    grid-template-columns: repeat(7,1fr);
+    grid-template-columns: repeat(7, 1fr);
 }
 
 .skill {
@@ -408,29 +467,39 @@ h1 {
 }
 
 #thetimeline {
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
     width: 90%;
-    min-height: 100px;
+    min-height: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    flex-direction: column;
+    padding: 50px;
+}
+
+#thetimeline .timeline {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: end;
     flex-direction: row;
-    padding: 50px;
 }
 
 .line {
     position: relative;
     border-radius: 3px;
     width: 3px;
-    height: 300px;
+    height: 1430px;
     background-color: #0095ec;
 }
-.information{
+
+.information {
     padding: 7px;
     position: absolute;
     width: 100%;
-    transform:translateY(-40%);
+    transform: translateY(-40%);
 }
+
 .line span {
     position: absolute;
     left: -4px;
@@ -440,21 +509,22 @@ h1 {
     background-color: #0095ec;
     /* box-shadow: -1px -1px 4px 4px #c74be025; */
 }
-.informations{
+
+.informations {
     position: relative;
     width: calc(100% - 10px);
-    height: 300px;
+    height: 1430px;
     box-shadow: none;
     /* background-color: #351757; */
 }
 
-.socialmedia{
+.socialmedia {
     display: flex;
     flex-direction: row;
     gap: 10px;
 }
 
-#callme{
+#callme {
     width: 90%;
     min-height: 150px;
     padding: 20px;
@@ -464,285 +534,297 @@ h1 {
     flex-direction: column;
 }
 
-#callme h1{
+#callme h1 {
     font-size: xx-large;
 }
 
 
 .bi-fastapi {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  vertical-align: -0.125em;
-  background-color: currentColor;
-  mask-image: url('assest/skilslogos/fastapi-svgrepo-com.svg');
-  mask-repeat: no-repeat;
-  mask-position: center;
-  mask-size: contain;
-  -webkit-mask-image: url('assest/skilslogos/fastapi-svgrepo-com.svg');
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  -webkit-mask-size: contain;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: -0.125em;
+    background-color: currentColor;
+    mask-image: url('assest/skilslogos/fastapi-svgrepo-com.svg');
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    -webkit-mask-image: url('assest/skilslogos/fastapi-svgrepo-com.svg');
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: contain;
 }
 
 .bi-vscode {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  vertical-align: -0.125em;
-  background-color: currentColor;
-  mask-image: url('assest/skilslogos/vscode-svgrepo-com.svg');
-  mask-repeat: no-repeat;
-  mask-position: center;
-  mask-size: contain;
-  -webkit-mask-image: url('assest/skilslogos/vscode-svgrepo-com.svg');
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  -webkit-mask-size: contain;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: -0.125em;
+    background-color: currentColor;
+    mask-image: url('assest/skilslogos/vscode-svgrepo-com.svg');
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    -webkit-mask-image: url('assest/skilslogos/vscode-svgrepo-com.svg');
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: contain;
 }
 
 .bi-sql {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  vertical-align: -0.125em;
-  background-color: currentColor;
-  mask-image: url('assest/skilslogos/sql-database-generic-svgrepo-com.svg');
-  mask-repeat: no-repeat;
-  mask-position: center;
-  mask-size: contain;
-  -webkit-mask-image: url('assest/skilslogos/sql-database-generic-svgrepo-com.svg');
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  -webkit-mask-size: contain;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: -0.125em;
+    background-color: currentColor;
+    mask-image: url('assest/skilslogos/sql-database-generic-svgrepo-com.svg');
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    -webkit-mask-image: url('assest/skilslogos/sql-database-generic-svgrepo-com.svg');
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: contain;
 }
+
 .bi-python {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  vertical-align: -0.125em;
-  background-color: currentColor;
-  mask-image: url('assest/skilslogos/python-logo-only.svg');
-  mask-repeat: no-repeat;
-  mask-position: center;
-  mask-size: contain;
-  -webkit-mask-image: url('assest/skilslogos/python-logo-only.svg');
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  -webkit-mask-size: contain;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: -0.125em;
+    background-color: currentColor;
+    mask-image: url('assest/skilslogos/python-logo-only.svg');
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    -webkit-mask-image: url('assest/skilslogos/python-logo-only.svg');
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: contain;
 }
+
 .bi-nodejs {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  vertical-align: -0.125em;
-  background-color: currentColor;
-  mask-image: url('assest/skilslogos/nodejs-svgrepo-com.svg');
-  mask-repeat: no-repeat;
-  mask-position: center;
-  mask-size: contain;
-  -webkit-mask-image: url('assest/skilslogos/nodejs-svgrepo-com.svg');
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  -webkit-mask-size: contain;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: -0.125em;
+    background-color: currentColor;
+    mask-image: url('assest/skilslogos/nodejs-svgrepo-com.svg');
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    -webkit-mask-image: url('assest/skilslogos/nodejs-svgrepo-com.svg');
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: contain;
 }
+
 .bi-micropython {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  vertical-align: -0.125em;
-  background-color: currentColor;
-  mask-image: url('assest/skilslogos/MicroPython_new_logo.svg');
-  mask-repeat: no-repeat;
-  mask-position: center;
-  mask-size: contain;
-  -webkit-mask-image: url('assest/skilslogos/MicroPython_new_logo.svg');
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  -webkit-mask-size: contain;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: -0.125em;
+    background-color: currentColor;
+    mask-image: url('assest/skilslogos/MicroPython_new_logo.svg');
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    -webkit-mask-image: url('assest/skilslogos/MicroPython_new_logo.svg');
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: contain;
 }
 
 .bi-jinja {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  vertical-align: -0.125em;
-  background-color: currentColor;
-  mask-image: url('assest/skilslogos/jinja-svgrepo-com.svg');
-  mask-repeat: no-repeat;
-  mask-position: center;
-  mask-size: contain;
-  -webkit-mask-image: url('assest/skilslogos/jinja-svgrepo-com.svg');
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  -webkit-mask-size: contain;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: -0.125em;
+    background-color: currentColor;
+    mask-image: url('assest/skilslogos/jinja-svgrepo-com.svg');
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    -webkit-mask-image: url('assest/skilslogos/jinja-svgrepo-com.svg');
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: contain;
 }
+
 .bi-javascript-my {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  vertical-align: -0.125em;
-  background-color: currentColor;
-  mask-image: url('assest/skilslogos/javascript-logo-svgrepo-com.svg');
-  mask-repeat: no-repeat;
-  mask-position: center;
-  mask-size: contain;
-  -webkit-mask-image: url('assest/skilslogos/javascript-logo-svgrepo-com.svg');
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  -webkit-mask-size: contain;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: -0.125em;
+    background-color: currentColor;
+    mask-image: url('assest/skilslogos/javascript-logo-svgrepo-com.svg');
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    -webkit-mask-image: url('assest/skilslogos/javascript-logo-svgrepo-com.svg');
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: contain;
 }
+
 .bi-html {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  vertical-align: -0.125em;
-  background-color: currentColor;
-  mask-image: url('assest/skilslogos/html5-svgrepo-com.svg');
-  mask-repeat: no-repeat;
-  mask-position: center;
-  mask-size: contain;
-  -webkit-mask-image: url('assest/skilslogos/html5-svgrepo-com.svg');
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  -webkit-mask-size: contain;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: -0.125em;
+    background-color: currentColor;
+    mask-image: url('assest/skilslogos/html5-svgrepo-com.svg');
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    -webkit-mask-image: url('assest/skilslogos/html5-svgrepo-com.svg');
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: contain;
 }
+
 .bi-go {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  vertical-align: -0.125em;
-  background-color: currentColor;
-  mask-image: url('assest/skilslogos/go-svgrepo-com.svg');
-  mask-repeat: no-repeat;
-  mask-position: center;
-  mask-size: contain;
-  -webkit-mask-image: url('assest/skilslogos/go-svgrepo-com.svg');
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  -webkit-mask-size: contain;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: -0.125em;
+    background-color: currentColor;
+    mask-image: url('assest/skilslogos/go-svgrepo-com.svg');
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    -webkit-mask-image: url('assest/skilslogos/go-svgrepo-com.svg');
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: contain;
 }
 
 .bi-git-my {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  vertical-align: -0.125em;
-  background-color: currentColor;
-  mask-image: url('assest/skilslogos/git-svgrepo-com.svg');
-  mask-repeat: no-repeat;
-  mask-position: center;
-  mask-size: contain;
-  -webkit-mask-image: url('assest/skilslogos/git-svgrepo-com.svg');
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  -webkit-mask-size: contain;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: -0.125em;
+    background-color: currentColor;
+    mask-image: url('assest/skilslogos/git-svgrepo-com.svg');
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    -webkit-mask-image: url('assest/skilslogos/git-svgrepo-com.svg');
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: contain;
 }
+
 .bi-flutter {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  vertical-align: -0.125em;
-  background-color: currentColor;
-  mask-image: url('assest/skilslogos/flutter-svgrepo-com.svg');
-  mask-repeat: no-repeat;
-  mask-position: center;
-  mask-size: contain;
-  -webkit-mask-image: url('assest/skilslogos/flutter-svgrepo-com.svg');
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  -webkit-mask-size: contain;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: -0.125em;
+    background-color: currentColor;
+    mask-image: url('assest/skilslogos/flutter-svgrepo-com.svg');
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    -webkit-mask-image: url('assest/skilslogos/flutter-svgrepo-com.svg');
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: contain;
 }
+
 .bi-django {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  vertical-align: -0.125em;
-  background-color: currentColor;
-  mask-image: url('assest/skilslogos/django-svgrepo-com.svg');
-  mask-repeat: no-repeat;
-  mask-position: center;
-  mask-size: contain;
-  -webkit-mask-image: url('assest/skilslogos/django-svgrepo-com.svg');
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  -webkit-mask-size: contain;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: -0.125em;
+    background-color: currentColor;
+    mask-image: url('assest/skilslogos/django-svgrepo-com.svg');
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    -webkit-mask-image: url('assest/skilslogos/django-svgrepo-com.svg');
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: contain;
 }
+
 .bi-dart {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  vertical-align: -0.125em;
-  background-color: currentColor;
-  mask-image: url('assest/skilslogos/dart-svgrepo-com.svg');
-  mask-repeat: no-repeat;
-  mask-position: center;
-  mask-size: contain;
-  -webkit-mask-image: url('assest/skilslogos/dart-svgrepo-com.svg');
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  -webkit-mask-size: contain;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: -0.125em;
+    background-color: currentColor;
+    mask-image: url('assest/skilslogos/dart-svgrepo-com.svg');
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    -webkit-mask-image: url('assest/skilslogos/dart-svgrepo-com.svg');
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: contain;
 }
 
 .bi-css-my {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  vertical-align: -0.125em;
-  background-color: currentColor;
-  mask-image: url('assest/skilslogos/css-svgrepo-com.svg');
-  mask-repeat: no-repeat;
-  mask-position: center;
-  mask-size: contain;
-  -webkit-mask-image: url('assest/skilslogos/css-svgrepo-com.svg');
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  -webkit-mask-size: contain;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: -0.125em;
+    background-color: currentColor;
+    mask-image: url('assest/skilslogos/css-svgrepo-com.svg');
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    -webkit-mask-image: url('assest/skilslogos/css-svgrepo-com.svg');
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: contain;
 }
+
 .bi-bootstrap-my {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  vertical-align: -0.125em;
-  background-color: currentColor;
-  mask-image: url('assest/skilslogos/bootstrap-svgrepo-com.svg');
-  mask-repeat: no-repeat;
-  mask-position: center;
-  mask-size: contain;
-  -webkit-mask-image: url('assest/skilslogos/bootstrap-svgrepo-com.svg');
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  -webkit-mask-size: contain;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: -0.125em;
+    background-color: currentColor;
+    mask-image: url('assest/skilslogos/bootstrap-svgrepo-com.svg');
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    -webkit-mask-image: url('assest/skilslogos/bootstrap-svgrepo-com.svg');
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: contain;
 }
+
 .bi-bale {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  vertical-align: -0.125em;
-  background-color: currentColor;
-  mask-image: url('assest/skilslogos/bale-svgrepo-com.svg');
-  mask-repeat: no-repeat;
-  mask-position: center;
-  mask-size: contain;
-  -webkit-mask-image: url('assest/skilslogos/bale-svgrepo-com.svg');
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  -webkit-mask-size: contain;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: -0.125em;
+    background-color: currentColor;
+    mask-image: url('assest/skilslogos/bale-svgrepo-com.svg');
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    -webkit-mask-image: url('assest/skilslogos/bale-svgrepo-com.svg');
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: contain;
 }
+
 .bi-python {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  vertical-align: -0.125em;
-  background-color: currentColor;
-  mask-image: url('assest/skilslogos/python-logo-only.svg');
-  mask-repeat: no-repeat;
-  mask-position: center;
-  mask-size: contain;
-  -webkit-mask-image: url('assest/skilslogos/python-logo-only.svg');
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  -webkit-mask-size: contain;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: -0.125em;
+    background-color: currentColor;
+    mask-image: url('assest/skilslogos/python-logo-only.svg');
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    -webkit-mask-image: url('assest/skilslogos/python-logo-only.svg');
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: contain;
 }
 
 
