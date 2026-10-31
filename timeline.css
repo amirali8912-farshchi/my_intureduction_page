@@ -26,7 +26,7 @@
     bottom: 0;
     left: 50%;
     width: 2px;
-    background: #6fbf73;
+    background: #728dec;
     transform: translateX(-50%);
 }
 
@@ -51,7 +51,7 @@
     top: 30px;
     width: 14px;
     height: 14px;
-    background: #6fbf73;
+    background: #728dec;
     border-radius: 50%;
     z-index: 2;
 }
@@ -67,8 +67,8 @@
 .timeline-content {
     padding: 20px;
     border-radius: 18px;
-    background: #182319;
-    border: 1px solid #2a3a2a;
+    background: #212c3a;
+    border: 1px solid #131922;
 }
 
 
