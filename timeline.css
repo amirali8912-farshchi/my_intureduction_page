@@ -6,10 +6,10 @@
     color: #ece8e8;
     font-family: 'vazirmatn';
 }
-body{
+/* body{
     overflow-y: visible !important;
     height: fit-content !important;
-}
+} */
 .timeline {
 
     position: relative;
