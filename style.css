@@ -525,7 +525,7 @@ h1 {
     width: 100%;
     
     min-height: 640px;
-    overflow-y: scroll;
+    /* overflow-y: scroll;  */
     max-width: 1000px;
     /* margin: 50px auto; */
 }
