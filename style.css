@@ -525,7 +525,7 @@ h1 {
     width: 100%;
     
     min-height: 640px;
-    overflow-y: scroll;
+    /* overflow-y: scroll;  */
     max-width: 1000px;
     /* margin: 50px auto; */
 }
@@ -824,21 +824,6 @@ h1 {
     -webkit-mask-size: contain;
 }
 
-.bi-gmail {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    vertical-align: -0.125em;
-    background-color: currentColor;
-    mask-image: url('assest/skilslogos/gmail.png');
-    mask-repeat: no-repeat;
-    mask-position: center;
-    mask-size: contain;
-    -webkit-mask-image: url('assest/skilslogos/gmail.png');
-    -webkit-mask-repeat: no-repeat;
-    -webkit-mask-position: center;
-    -webkit-mask-size: contain;
-}
 .bi-python {
     display: inline-block;
     width: 20px;
