@@ -139,7 +139,7 @@ button {
     height: 40px;
     color: #728dec;
     width: 120px;
-    margin-bottom: 90px;
+    /* margin-bottom: 90px; */
     /* margin-right: 10px; */
     margin-left: calc(100% - 110px);
     padding: 10px;
@@ -478,16 +478,16 @@ h1 {
     flex-direction: column;
     padding: 50px;
 }
-
+/* 
 #thetimeline .timeline {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: end;
     flex-direction: row;
-}
+} */
 
-.line {
+/* .line {
     position: relative;
     border-radius: 3px;
     width: 3px;
@@ -509,7 +509,7 @@ h1 {
     height: 12px;
     border-radius: 50%;
     background-color: #0095ec;
-    /* box-shadow: -1px -1px 4px 4px #c74be025; */
+    box-shadow: -1px -1px 4px 4px #c74be025;
 }
 
 .informations {
@@ -517,8 +517,19 @@ h1 {
     width: calc(100% - 10px);
     height: 1430px;
     box-shadow: none;
-    /* background-color: #351757; */
+    background-color: #351757;
+} */
+
+
+.timeline {
+    width: 100%;
+    
+    min-height: 640px;
+    overflow-y: scroll;
+    max-width: 1000px;
+    /* margin: 50px auto; */
 }
+
 
 .socialmedia {
     display: flex;
